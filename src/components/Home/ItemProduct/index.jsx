@@ -1,49 +1,48 @@
 import {useState, useEffect} from 'react';
 import ProductCard from '../../general/ProductCard/ProductCard';
-// import './Item.css';
-// import dress1 from '../../img/dress1.jpg';
-// import dress2 from '../../img/dress2.jpg';
-// import dress3 from '../../img/dress3.jpg';
-// import dress4 from '../../img/dress4.jpg';
+import '../ItemProduct/';
+// import dress1 from '../../../images/dress1.jpg';
+// import dress2 from '../../../images/dress2.jpg';
+// import dress3 from '../../../images/dress3.jpg';
+// import dress4 from '../../../images/dress4.jpg';
 
 const Item = () => {
    
     const [items, setItems] = useState([]);
 
-    const products = [
-        {
-            id: 1,
-            titulo: "Vestido Naomi floral",
-            // imagen: dress1,
-            descripcion: "Ultima tendencia, no importa quién seas, de dónde seas y qué estés haciendo",
-            precio: 2500
-        },
-        {
-            id: 2,
-            titulo: "Vestido Lola fruncido",
-            // imagen: dress2,
-            descripcion: "Ultima tendencia, no importa quién seas, de dónde seas y qué estés haciendo",
-            precio: 3000,
-        },
-        {
-            id: 3,
-            titulo: "Vestido Puket floral",
-            // imagen: dress3,
-            descripcion: "Ultima tendencia, no importa quién seas, de dónde seas y qué estés haciendo",
-            precio: 3500,
-        },
-        {
-            id: 4,
-            titulo: "Vestido Camille con lunares",
-            // imagen: dress4,
-            descripcion: "Ultima tendencia, no importa quién seas, de dónde seas y qué estés haciendo",
-            precio: 4000,
-        },
-    ]
-
     const getProducts = new Promise((resolve) => {
         setTimeout(() => {
-            resolve(products);
+            resolve( [
+                {
+                    id: 1,
+                    titulo: "Vestido Naomi floral",
+                    // imagen: dress1,
+                    descripcion: "Ultima tendencia, no importa quién seas, de dónde seas y qué estés haciendo",
+                    precio: 2500
+                },
+                {
+                    id: 2,
+                    titulo: "Vestido Lola fruncido",
+                    // imagen: dress2,
+                    descripcion: "Ultima tendencia, no importa quién seas, de dónde seas y qué estés haciendo",
+                    precio: 3000,
+                },
+                {
+                    id: 3,
+                    titulo: "Vestido Puket floral",
+                    // imagen: dress3,
+                    descripcion: "Ultima tendencia, no importa quién seas, de dónde seas y qué estés haciendo",
+                    precio: 3500,
+                },
+                {
+                    id: 4,
+                    titulo: "Vestido Camille con lunares",
+                    // imagen: dress4,
+                    descripcion: "Ultima tendencia, no importa quién seas, de dónde seas y qué estés haciendo",
+                    precio: 4000,
+                },
+            ]
+        );
         }, 2000)
     })
 
@@ -76,7 +75,7 @@ const Item = () => {
                                     <li className ="item" 
                                         key={item.id} >
                                         <ProductCard
-                                        titulo={item.titulo}
+                                        titulo={item.titulo}    
                                         // imagen={item.imagen}
                                         descripcion={item.descripcion}
                                         precio={item.precio}
