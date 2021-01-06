@@ -1,0 +1,38 @@
+div.count {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.countContainer {
+    margin-left: 1.4em;
+}
+
+.boton {
+    color: white;
+    background-color: rgb(223, 167, 83);
+    border-color: rgb(196, 120, 8);
+}
+
+.boton:hover {
+    background-color: rgb(223, 167, 83);
+    border-color: rgb(196, 120, 8);
+    border: solid 2px;
+}
+
+
+.button {
+    margin-right: 1.2rem;
+    margin-top: 1rem;
+    border: 0.1rem rgb(202, 87, 20) solid; 
+    background-color:  rgb(231, 165, 126);
+  }
+  
+  .button:hover {
+    border: 0.3rem rgb(126, 11, 11) solid;
+  }
+  
+  .button .primary {
+    background-color: antiquewhite;
+  }
+  

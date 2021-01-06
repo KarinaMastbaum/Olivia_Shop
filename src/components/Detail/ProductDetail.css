@@ -1,0 +1,52 @@
+.titulo {
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(196, 120, 8);
+    font-weight: bold;
+    margin-left: 10rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.imagen {
+    float: left;
+    border-radius: 20px ;   
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+
+.descripcion {
+    font-size: 2rem;
+    color: rgb(245, 163, 116)
+}
+
+.precio {
+    text-align: center;
+    color:rgb(218, 131, 2);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+div.container {
+    text-align: center; 
+    width: 80%
+}
+
+.botonProductItem {   
+    display:block;
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    border: 0.1rem rgb(202, 87, 20) solid; 
+    background-color:  rgb(231, 165, 126);
+  }
+  
+  .botonProductItem:hover {
+    border: 0.3rem rgb(126, 11, 11) solid;
+  }
+  

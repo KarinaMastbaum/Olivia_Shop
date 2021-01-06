@@ -1,0 +1,102 @@
+
+ul.container {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+ul {
+  list-style: none;
+  font-size:0;
+}
+
+li {
+  position: relative;
+  font-size: 14px;
+}
+
+ul ul {
+  position: absolute;
+  display: none;
+}  
+
+ul ul li {
+  display: block;
+}
+
+ul li:hover ul {
+  background-color: #ebb472;
+  color: white;
+  display: block;
+
+}
+
+.menuItems {
+  margin: 0.5rem 1rem 0.1rem 0rem;
+}
+
+.menuItems a:hover {
+  color: white;
+}
+
+  a {
+    text-decoration: none;
+  }
+  
+  header{ 
+    font-size: 2rem;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    grid-area: header;
+    background-color: #EFEAE4;
+    color: white;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  
+  header a {
+    margin: 1rem 2rem 1rem 2rem;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .navBar {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+  }
+  
+  .logo {
+    padding-left: 1rem;
+    height: 90px;
+    width: auto;
+    justify-content: center;
+  }
+  
+  a.inicio {
+    font-size: 1.8rem;
+    text-decoration: none;
+  }
+  
+  a.productos {
+    font-size: 1.8rem;
+    text-decoration: none;
+  }
+
+  a.nosotros {
+    font-size: 1.8rem;
+    text-decoration: none;
+  }
+  
+  a.contacto {
+    font-size: 1.8rem;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #ecad60; 
+  }
+
+ 
