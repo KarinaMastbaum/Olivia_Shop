@@ -4,8 +4,8 @@ const Newsletter = () => {
     return (
         <section className="newsletter">
             <div className="container">
-                <h2>¡Suscribite!</h2>
-                <p>Dejanos tu e-mail y recibí las mejores ofertas</p>
+                <h2>Suscribite!</h2>
+                <p>Ingresa tu e-mail y recibí las mejores ofertas</p>
 
                 <form>
                     <input type="text" placeholder="E-mail" />

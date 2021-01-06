@@ -7,9 +7,9 @@ const Category = () => {
 
     const categories = (categories) => {
         switch(categories) {
-            case 'ropa': return <p className="hola">Estoy en Ropa</p>;
-            case 'Zapatos': return <p>Estoy en Zapatos</p>;
-            case 'accesorios': return <p>Estoy en Accesorios</p>
+            case 'ropa': return <p>Ropa</p>;
+            case 'Zapatos': return <p>Zapatos</p>;
+            case 'accesorios': return <p>Accesorios</p>
             default: return <p>la categoría no existe</p>
         }
     }

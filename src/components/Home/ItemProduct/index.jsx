@@ -63,31 +63,30 @@ const Item = () => {
 
     return (
         <section className="products">
-            <div className="container">
                 {
                     items.length ?
                     <>
                         <h2 className="destacados">Productos destacados</h2>
-
-                        <ul className="contenedor">
-                            {
-                                items.map((item) => (
-                                    <li className ="item" 
-                                        key={item.id} >
-                                        <ProductCard
-                                        titulo={item.titulo}    
-                                        // imagen={item.imagen}
-                                        descripcion={item.descripcion}
-                                        precio={item.precio}
-                                        />
-                                    </li>
-                                ))
-                            }
-                        </ul>
+                        <div className="container">
+                            <ul className="contenedor">
+                              {
+                                  items.map((item) => (
+                                      <li className ="item" 
+                                          key={item.id} >
+                                          <ProductCard
+                                          titulo={item.titulo}    
+                                          // imagen={item.imagen}
+                                          descripcion={item.descripcion}
+                                          precio={item.precio}
+                                          />
+                                      </li>
+                                  ))
+                              }
+                            </ul>
+                        </div>
                     </> :
                     <p className="cargando">Cargando productos...</p>
                 }
-            </div>
         </section>
     )
 }
