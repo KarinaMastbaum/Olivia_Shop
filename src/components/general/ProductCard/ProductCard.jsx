@@ -10,7 +10,7 @@ const ProductCard = ({id, titulo, imagen, descripcion, precio}) => {
             <div className="productCard">
             <div>
                 <h3>{titulo}</h3>
-                <img src={imagen} alt='Producto'/>
+                <img>{imagen}</img>
                 <p>{descripcion}</p>
                 <p>${precio}</p>
                 <CountContainer min={0} max={10}/>

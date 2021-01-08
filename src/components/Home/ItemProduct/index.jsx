@@ -49,6 +49,7 @@ const Item = () => {
     const getProductsItem = async () => {
         try {
             const result = await getProducts;
+            console.log(result)
             setItems(result);
         } catch(error) {
             alert('No podemos mostrar los productos en este momento');
@@ -58,6 +59,7 @@ const Item = () => {
     useEffect(() => {
         getProductsItem();
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
 
@@ -78,6 +80,7 @@ const Item = () => {
                                           imagen={item.imagen}
                                           descripcion={item.descripcion}
                                           precio={item.precio}
+                                          id={item.id}
                                           />
                                       </li>
                                   ))
