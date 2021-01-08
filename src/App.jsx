@@ -1,5 +1,4 @@
 import './reset.css';
-import {useEffect} from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import NavAndWidgetCart from './components/general/NavAndWidgetCart/NavAndWidgetCart';
 import FreeShipping from './components/general/FreeShipping/';

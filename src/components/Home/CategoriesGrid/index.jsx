@@ -6,17 +6,17 @@ const CategoriesGrid = () => {
         <section className="categories_grid">
             <div className="container">
                 <div className="item">
-                    <Link to="">
+                    <Link to="/ropa">
                         Ropa  
                     </Link>
                 </div>
                 <div className="item">
-                    <Link to="">
+                    <Link to="/zapatos">
                         Zapatos 
                     </Link>
                 </div>
                 <div className="item">
-                    <Link to="">
+                    <Link to="/accesorios">
                         Accesorios 
                     </Link>
                 </div>
