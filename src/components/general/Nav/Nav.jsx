@@ -4,6 +4,7 @@ import NavCart from "../NavCart/NavCart";
 import CartIcon from "./CartIcon";
 import { Link } from "react-router-dom";
 
+
 function Nav({ titulo, action }) {
   const menuItems = [
     {

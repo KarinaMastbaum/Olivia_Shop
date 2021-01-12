@@ -1,25 +1,24 @@
-import {useEffect} from 'react';
-import {Switch, useParams} from 'react-router-dom';
+import {useState, useEffect} from 'react';
+import {products} from '../products';
+import {useParams} from 'react-router-dom';
+import ProductsList from './ProductsList';
+import './Category.css';
 
 const Category = () => {
-    
     const {category_name} = useParams();
+    const [products, setProducts] = useState([]);
 
-    const categories = (categories) => {
-        switch(categories) {
-            case 'ropa': return <p>Ropa</p>;
-            case 'Zapatos': return <p>Zapatos</p>;
-            case 'accesorios': return <p>Accesorios</p>
-            default: return <p>la categoría no existe</p>
+    useEffect(() => {
+        if(category_name) {
+            setProducts(products.filter(products => products.category === category_name))
         }
-    }
+    }, [category_name])
 
     return (
-        <>
-            {
-               categories(category_name) 
-            }
-        </>
+        <section className="category">
+            <h2>{category_name.split('-').join(' ')}</h2>
+            <ProductsList products={products} />
+        </section>
     )
 }
 
