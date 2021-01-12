@@ -61,7 +61,7 @@ const ItemDetail = () => {
         console.log(response, "detail");
       })
       .catch((err) => console.log(err));
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [id]);
 
   return (
@@ -78,3 +78,6 @@ const ItemDetail = () => {
 };
 
 export default ItemDetail;
+
+
+
