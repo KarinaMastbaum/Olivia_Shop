@@ -21,10 +21,10 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/category/:category_name?">
+        <Route exact path="/:category_name">
           <Category />
         </Route>
-        <Route path="/detail/:id">
+        <Route exact path="/:category_name/:id">
           <Detail />
         </Route>
         <Route path="/cart">

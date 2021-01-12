@@ -15,10 +15,10 @@ li {
   font-size: 14px;
 }
 
-ul ul {
+/* ul ul {
   position: absolute;
   display: none;
-}  
+}   */
 
 ul ul li {
   display: block;
@@ -31,8 +31,18 @@ ul li:hover ul {
 
 }
 
+.titulo {
+  text-decoration: none;
+  color:aliceblue;
+}
+
 .menuItems {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
   margin: 0.5rem 1rem 0.1rem 0rem;
+  text-decoration: none;
+
 }
 
 .menuItems a:hover {
@@ -61,11 +71,8 @@ ul li:hover ul {
     text-align: center;
   }
 
-  .navBar {
-      display: flex;
-      align-items: center;
-      width: 100%;
-      justify-content: space-between;
+  .imagen {
+    width: 100%
   }
   
   .logo {
@@ -75,28 +82,6 @@ ul li:hover ul {
     justify-content: center;
   }
   
-  a.inicio {
-    font-size: 1.8rem;
-    text-decoration: none;
-  }
-  
-  a.productos {
-    font-size: 1.8rem;
-    text-decoration: none;
-  }
 
-  a.nosotros {
-    font-size: 1.8rem;
-    text-decoration: none;
-  }
-  
-  a.contacto {
-    font-size: 1.8rem;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #ecad60; 
-  }
 
  
