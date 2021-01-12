@@ -6,7 +6,7 @@
   .category h2 {
     text-align: center;
     font-size: 3rem;
-    color: var(--color-secundario);
+    color: orange;
   }
   
   .category h2::first-letter {
