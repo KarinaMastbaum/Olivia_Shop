@@ -25,7 +25,7 @@ export default function ItemCount({count, onAdd}) {
             <button 
                 className= "button primary"
                 onClick={agregarCarrito}
-                >Agregar al carrito</button>
+                ><h5 className="carrito">Agregar al carrito</h5></button>
             </div>
        </div> 
     )

@@ -14,7 +14,7 @@ const ProductCard = ({id, titulo, imagen, descripcion, precio}) => {
                 <p>{descripcion}</p>
                 <p>${precio}</p>
                 <CountContainer min={0} max={10}/>
-                <Link to={`/detail/${id}`}>Ver detalle</Link>
+                <Link className="detalle" to={`/detail/${id}`}>Ver detalle</Link>
             </div>
         </div>
         

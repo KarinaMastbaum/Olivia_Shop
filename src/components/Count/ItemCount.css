@@ -10,7 +10,7 @@
 }
 
 .button {
-  display: block;
+  width: 100%;
 }
 
 .boton {
@@ -41,3 +41,8 @@
     background-color: antiquewhite;
   }
   
+  .carrito {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+  }

@@ -39,20 +39,7 @@
   font-weight: 600;
 }
 
-.productCard div a {
-  display: block;
-  border: none;
-  padding: 0.5rem;
-  outline: none;
-  text-decoration: none;
-  cursor: pointer;
-  background-color: #f78325;
-  border-radius: 1rem;
-  color: var(--blanco);
-  font-size: 1.5rem;
-  margin-top: 1rem;
-  transition: background 0.5s;
-}
+
 
 .productCard div a:hover {
   background: #f7b525;
@@ -100,23 +87,6 @@
   font-weight: 600;
 }
 
-.productCard div a {
-  display: block;
-  border: none;
-  padding: 0.5rem;
-  outline: none;
-  cursor: pointer;
-  background: var(--color-principal);
-  border-radius: 1rem;
-  color: var(--blanco);
-  font-size: 1.3rem;
-  margin-top: 1rem;
-  transition: background 0.5s;
-}
-
-.productCard div a:hover {
-  background: #0758af;
-}
 
 .productCard.list {
   display: flex;
@@ -141,4 +111,24 @@
   min-height: auto;
   text-align: left;
   font-size: 2rem;
+}
+
+
+.productCard div a {
+  display: block;
+  border: none;
+  padding: 0.5rem;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #f78325;
+  border-radius: 1rem;
+  color: var(--blanco);
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  transition: background 0.5s;
+}
+
+.productCard div a:hover {
+  background: #b17608;
 }
