@@ -1,16 +1,18 @@
 import React from 'react';
 import'./ItemCount.css';
 import { Button } from 'react-bootstrap';
+import {useHistory} from 'react-router-dom';
 
 export default function ItemCount({count, onAdd}) {
-    
+    const history = useHistory();
+
     const agregarCarrito = () => {
-        alert(`Agregaste ${count} productos al carrito`);
+        history.push('/cart');
     }
     
     return (
         <div  className="countContainer">
-            <div className="count">
+            <div className="container">
                         <Button className='mr-4 boton' onClick={() => (onAdd('-'))}>-</Button>
                 <div>
                     <div>
@@ -19,7 +21,7 @@ export default function ItemCount({count, onAdd}) {
                 </div>
                     <Button className='ml-4 boton' onClick={() => (onAdd('+'))}>+</Button>
             </div>
-            <div>
+            <div ClassName="button">
             <button 
                 className= "button primary"
                 onClick={agregarCarrito}

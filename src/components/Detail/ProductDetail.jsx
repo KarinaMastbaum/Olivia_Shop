@@ -1,17 +1,10 @@
 import {useState, useContext} from 'react';
 import './ProductDetail.css';
+import CountContainer from '../../containers/CountContainer';
 // import {Store} from '../../store';
-import {useHistory} from 'react-router-dom';
 
 const ProductDetail = ({item}) => {
-    const history = useHistory();
     // const [data, setData] = useContext(Store);
-
-    const onAdd = () => {
-
-        history.push('/cart');
-	
-    }
     
     return (
         <article>
@@ -20,7 +13,9 @@ const ProductDetail = ({item}) => {
                 <img  className="imagen" src={item.imagen} alt="dress"/>
                     <p className="descripcion">{item.descripcion}</p>
                     <p className="precio">${item.precio}</p>
-                </div>
+
+                    <CountContainer min={0} max={10}/>
+                    </div>
         </article> 
     )
 }

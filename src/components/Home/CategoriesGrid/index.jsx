@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 
 const CategoriesGrid = () => {
     return (
+        
         <section className="categories_grid">
             <div className="container">
                 <div className="item">
