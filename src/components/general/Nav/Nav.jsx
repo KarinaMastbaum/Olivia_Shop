@@ -49,7 +49,7 @@ function Nav({ titulo, action }) {
               </ul>
             </div>
             <div>
-              {!!qty && <NavCart action={action} qty={qty} />}
+              <NavCart action={action}/>
             </div>
           </div>
     </nav>

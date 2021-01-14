@@ -1,3 +1,10 @@
+
+.product {
+    display: grid;
+    grid-template-columns: 100% 1fr;
+    grid-gap: 6rem;
+  }
+
 .titulo {
     text-align: center;
     font-size: 3rem;
@@ -30,8 +37,9 @@
 }
 
 div.container {
+    display: flex;
     text-align: center; 
-    width: 80%
+    width: 60%
 }
 
 .botonProductItem {   
@@ -49,4 +57,61 @@ div.container {
   .botonProductItem:hover {
     border: 0.3rem rgb(126, 11, 11) solid;
   }
+
+
+.button {
+  width: 100%;
+}
+
+.boton {
+    color: white;
+    background-color: rgb(223, 167, 83);
+    border-color: rgb(196, 120, 8);
+}
+
+.boton:hover {
+    background-color: rgb(223, 167, 83);
+    border-color: rgb(196, 120, 8);
+    border: solid 2px;
+}
+
+
+.button {
+    margin-right: 1.2rem;
+    margin-top: 1rem;
+    border: 0.1rem rgb(202, 87, 20) solid; 
+    background-color:  rgb(231, 165, 126);
+  }
   
+  .button:hover {
+    border: 0.3rem rgb(126, 11, 11) solid;
+  }
+  
+  .button .primary {
+    background-color: antiquewhite;
+  }
+  
+  .carrito {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+  } 
+
+  .cantidad {
+      display: flex;
+  }
+
+  input.cantidad {
+  width: 20%;
+  text-align: center;
+  border: none;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1.8rem;
+  outline: none;
+  }
+  
+  .mr-4.boton {
+      width: 5%;
+      
+  }

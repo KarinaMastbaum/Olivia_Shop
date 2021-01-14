@@ -4,10 +4,10 @@ import './ProductCard.css';
 import CountContainer from '../../../containers/CountContainer';
 
 
-const ProductCard = ({id, titulo, imagen, descripcion, precio}) => {
+const ProductCard = ({id, titulo, imagen, descripcion, precio, type='grid'}) => {
 
     return(
-            <div className="productCard">
+            <div className={`productCard ${type}`}>
             <div>
                 <h3>{titulo}</h3>
                 <img src={imagen} alt='Producto' />
@@ -25,17 +25,3 @@ export default ProductCard;
 
 
 
-// const ProductCard = ({id, titulo, precio}) => {
-//     return (
-//         <article className="productCard">
-//             <img src="http://placehold.it/300x300" alt="Mi producto de prueba"/>
-//             <div>
-//                 <h3>{titulo}</h3>
-//                 <p>${precio}</p>
-//                 <Link to={`/detail/${id}`}>Ver detalle</Link>
-//             </div>
-//         </article>   
-//     )   
-// }
-
-// export default ProductCard;
