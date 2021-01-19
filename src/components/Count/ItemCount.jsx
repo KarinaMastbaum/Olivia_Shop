@@ -1,31 +1,26 @@
-import React from 'react';
+import React, {useState} from 'react';
 import'./ItemCount.css';
 import { Button } from 'react-bootstrap';
 import {useHistory} from 'react-router-dom';
 
-export default function ItemCount({count, onAdd}) {
-    const history = useHistory();
+export default function ItemCount({data, setData, min, max}) {
+    const [contador, setContador ] =useState(0);
+    const {onAdd, cart } = data;
 
     const agregarCarrito = () => {
-        history.push('/cart');
+
     }
     
     return (
         <div  className="countContainer">
             <div className="container">
-                        <Button className='mr-4 boton' onClick={() => (onAdd('-'))}>-</Button>
+                        <Button className='mr-4 boton' onClick={() => (onAdd('-', contador, setContador, max, min))}>-</Button>
                 <div>
                     <div>
-                        {count}
+                        {contador}
                     </div>
                 </div>
-                    <Button className='ml-4 boton' onClick={() => (onAdd('+'))}>+</Button>
-            </div>
-            <div ClassName="button">
-            <button 
-                className= "button primary"
-                onClick={agregarCarrito}
-                ><h5 className="carrito">Agregar al carrito</h5></button>
+                    <Button className='ml-4 boton' onClick={() => (onAdd('+', contador, setContador, max, min))}>+</Button>
             </div>
        </div> 
     )

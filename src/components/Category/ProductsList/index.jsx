@@ -19,7 +19,7 @@ const ProductsList = ({products}) => {
 
             <ul className={`products_list ${types ? 'grid' : 'list'}`}>
                 {
-                    products.map(item => <li key={item.id}><ProductCard id={item.id} titulo={item.title} precio={item.price} categoria={item.category} type={`${types ? 'grid' : 'list'}`} /></li>)
+                    products.map(item => <li key={item.id + item.title}><ProductCard id={item.id} titulo={item.title} imagen={item.image} precio={item.price} categoria={item.category} type={`${types ? 'grid' : 'list'}`} /></li>)
                 }
             </ul>
         </section>
