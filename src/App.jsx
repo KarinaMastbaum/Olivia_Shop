@@ -29,7 +29,7 @@ function App() {
         "category": "Ropa",
         "title": "Vestido Naomi",
         "image": "dress1.jpg",
-        "description": "sobre el Vestido Naomi",
+        "description": "Vestido Naomi ideal para dia y noche",
         "availableSize": ["XL", "L", "M", "S"],
         "price": 2500, 
         "cantidad": 1
@@ -37,8 +37,8 @@ function App() {
         {
           "_id": 2,
           "category": "Zapatos",
-          "image": "dress2.jpg",
-          "title": "Vestido Lola con frente fruncido",
+          "image": "zapatos2.jpg",
+          "title": "Zapatos de cuero color negro, super comodos",
           "description": "Ultima tendencia, no importa quién seas, de dónde seas y qué estés haciendo",
           "availableSizes": ["XS", "X", "M", "L"],
           "price": 3000
@@ -47,7 +47,7 @@ function App() {
           "_id": 3,
           "category": "Accesorios",
           "image": "dress3.jpg",
-          "title": "Vestido Puket color rosa floral",
+          "title": "Mochila de cuero color Marron, perfecta para todos los dias",
           "description": "Ultima tendencia, no importa quién seas, de dónde seas y qué estés haciendo",
           "availableSizes": ["X", "M", "L", "XXL"],
           "price": 3500
@@ -55,8 +55,8 @@ function App() {
         {
           "_id": 4,
           "category": "Zapatos",
-          "image": "dress4.jpg",
-          "title": "Vestido Camille con lunares",
+          "image": "zapatos1.jpg",
+          "title": "Zapatos de cuero color Nude, super comodos",
           "description": "Ultima tendencia, no importa quién seas, de dónde seas y qué estés haciendo",
           "availableSizes": ["XL", "XXL"],
           "price": 4000
@@ -64,7 +64,7 @@ function App() {
         {
           "_id": 5,
           "category": "Ropa",
-          "image": "dress4.jpg",
+          "image": "dress2.jpg",
           "title": "Vestido Sunset con Lunares amarillos",
           "description": "Ultima tendencia, no importa quién seas, de dónde seas y qué estés haciendo",
           "availableSizes": ["X", "L", "XL"],
@@ -73,8 +73,8 @@ function App() {
         {
           "_id": 6,
           "category": "Accesorios",
-          "image": "dress2.jpg",
-          "title": "Vestido Marin Azul y rojo",
+          "image": "accesorio2.jpg",
+          "title": "Mochila de cuero color negro, perfecta para todos los dias",
           "description": "Ultima tendencia, no importa quién seas, de dónde seas y qué estés haciendo",
           "availableSizes": ["XS","X", "L", "XL"],
           "price": 2200

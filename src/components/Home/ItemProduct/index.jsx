@@ -1,33 +1,32 @@
-import {useState, useEffect, useContext} from 'react';
+import {useState, useEffect} from 'react';
 import ProductCard from '../../general/ProductCard/ProductCard';
 import '../ItemProduct/';
-import {Store} from '../../../store/index';
+// import {Store} from '../../../store/index';
+import {getFirestore} from '../../../db/index';
 
 const Item = () => {
    
     const [items, setItems] = useState([]);
-    const [data, setData] = useContext(Store);
+    // const [data, setData] = useContext(Store);
+    const db = getFirestore();
 
-    const getProducts = new Promise((resolve) => {
-        setTimeout(() => {
-            resolve( 
-                data.items
-        );
-        }, 2000)
-    })
 
-    const getProductsItem = async () => {
-        try {
-            const result = await getProducts;
-            console.log(result)
-            setItems(result);
-        } catch(error) {
-            alert('No podemos mostrar los productos en este momento');
-        }
+    const getProducstItem= () => {
+        db.collection('productos').get()
+        .then(docs => {
+            let arr = [];
+            docs.forEach(doc => {
+                arr.push({id: doc.id, data: doc.data()})
+            })
+
+            setItems(arr);
+        })
+        .catch(e => console.log(e));
+
     }
-
+    
     useEffect(() => {
-        getProductsItem();
+        getProducstItem();
 
 
     }, [])
@@ -44,12 +43,12 @@ const Item = () => {
                               {
                                   items.map((item) => (
                                       <li className ="item" 
-                                          key={items.id} >
+                                          key={item.id} >
                                           <ProductCard
-                                          titulo={item.titulo}    
+                                          titulo={item.title}    
                                           imagen={item.image}
-                                          descripcion={item.descripcion}
-                                          precio={item.precio}
+                                          descripcion={item.description}
+                                          precio={item.price}
                                           id={item._id}
                                           />
                                       </li>
@@ -63,5 +62,6 @@ const Item = () => {
         </section>
     )
 }
+
 
 export default Item;
