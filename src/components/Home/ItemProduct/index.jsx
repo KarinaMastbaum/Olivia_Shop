@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react';
 import ProductCard from '../../general/ProductCard/ProductCard';
-import '../ItemProduct/';
+import './ItemProduct.css';
 // import {Store} from '../../../store/index';
 import {getFirestore} from '../../../db/index';
 

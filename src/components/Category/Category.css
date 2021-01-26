@@ -1,6 +1,6 @@
 .category {
-    min-height: 100vh;
-    padding: 4rem;
+    /* min-height: 100vh; */
+    /* padding: 4rem; */
   }
   
   .category h2 {
@@ -13,3 +13,8 @@
     text-transform: uppercase;
   }
   
+section.category {
+  margin-top: 5rem;
+  display: flex;
+  /* justify-content: space-between; */
+}

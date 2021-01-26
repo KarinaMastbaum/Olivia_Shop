@@ -36,12 +36,6 @@ nav {
   color: rgb(177, 177, 177);
   text-decoration: none;
 }
-/* ul ul {
-  position: absolute;
-  display: none;
-}   */
-
-
 
 ul li:hover ul {
   background-color: #ebb472;

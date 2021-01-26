@@ -18,8 +18,7 @@ const Category = () => {
 
     return (
         <section className="category">
-            <h2>{category_name.split('-').join(' ')}</h2>
-            <ProductsList products={prods} />
+            <ProductsList className="productList" products={prods} />
         </section>
     )
 }
