@@ -45,10 +45,10 @@ const Item = () => {
                                       <li className ="item" 
                                           key={item.id} >
                                           <ProductCard
-                                          titulo={item.title}    
-                                          imagen={item.image}
-                                          descripcion={item.description}
-                                          precio={item.price}
+                                         titulo={item.data.title}
+                                         imagen={item.data.image}
+                                         descripcion={item.data.description}
+                                         precio={item.data.price}
                                           id={item._id}
                                           />
                                       </li>
