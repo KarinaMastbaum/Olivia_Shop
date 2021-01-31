@@ -8,11 +8,22 @@ import CountContainer from '../../../containers/CountContainer';
 
 const ProductCard = ({id, titulo, imagen, descripcion, precio, type='grid'}) => {
 
+    console.log(id);
+    console.log(titulo);
+    console.log(imagen);
+    console.log(descripcion);
+    console.log(precio);
+    console.log(type);
+
     const [data, setData] = useContext(Store);
     const {cart} = data;
 
     const agregarCarrito= (productoId) => {
+        
+        const cantidad = 0;
+
         const filtro = data.items.filter(prod => Number(prod._id)=== Number(productoId))[0];
+        console.log(filtro);
         if(!filtro.cantidad) {
             filtro.cantidad = 1;
             setData({...data, cart: [...cart, filtro]})
@@ -27,6 +38,7 @@ const ProductCard = ({id, titulo, imagen, descripcion, precio, type='grid'}) => 
     return(
             <div className={`productCard ${type}`}>
             <div>
+                <h3>{id}</h3>
                 <h3>{titulo}</h3>
                 <img src={img.default} alt='Producto' />
                 <p>{descripcion}</p>

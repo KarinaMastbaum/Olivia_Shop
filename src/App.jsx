@@ -25,7 +25,7 @@ function App() {
 
     items: [
       {
-        "_id": 1,
+        "id": 1,
         "category": "Ropa",
         "title": "Vestido Naomi",
         "image": "dress1.jpg",
@@ -188,6 +188,7 @@ function App() {
           "price": 4200
         }
     ],
+    
     cantidad: 0,
     freeShipping: 4000,
     cuotas: 3,

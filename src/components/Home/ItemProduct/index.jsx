@@ -49,7 +49,7 @@ const Item = () => {
                                          imagen={item.data.image}
                                          descripcion={item.data.description}
                                          precio={item.data.price}
-                                          id={item._id}
+                                          id={item.data.id}
                                           />
                                       </li>
                                   ))
