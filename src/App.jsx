@@ -25,7 +25,7 @@ function App() {
 
     items: [
       {
-        "id": 1,
+        "_id": 1,
         "category": "Ropa",
         "title": "Vestido Naomi",
         "image": "dress1.jpg",
@@ -41,7 +41,8 @@ function App() {
           "title": "Zapatos de cuero color negro, super comodos",
           "description": "Ultima tendencia, no importa quién seas, de dónde seas y qué estés haciendo",
           "availableSizes": ["XS", "X", "M", "L"],
-          "price": 3000
+          "price": 3000,
+          "cantidad": 1
         },
         {
           "_id": 3,
@@ -50,7 +51,8 @@ function App() {
           "title": "Mochila Paris",
           "description": "Ultima tendencia, no importa quién seas, de dónde seas y qué estés haciendo",
           "availableSizes": ["X", "M", "L", "XXL"],
-          "price": 3500
+          "price": 3500,
+          "cantidad": 1
         },
         {
           "_id": 4,
@@ -59,7 +61,8 @@ function App() {
           "title": "Zapatos de cuero color Nude, super comodos",
           "description": "Ultima tendencia, no importa quién seas, de dónde seas y qué estés haciendo",
           "availableSizes": ["XL", "XXL"],
-          "price": 4000
+          "price": 4000,
+          "cantidad": 1
         },
         {
           "_id": 5,
@@ -68,7 +71,8 @@ function App() {
           "title": "Vestido Sunset con Lunares amarillos",
           "description": "Ultima tendencia, no importa quién seas, de dónde seas y qué estés haciendo",
           "availableSizes": ["X", "L", "XL"],
-          "price": 5500 
+          "price": 5500,
+          "cantidad": 1 
         },
         {
           "_id": 6,
@@ -77,7 +81,8 @@ function App() {
           "title": "Mochila Roma",
           "description": "Ultima tendencia, no importa quién seas, de dónde seas y qué estés haciendo",
           "availableSizes": ["XS","X", "L", "XL"],
-          "price": 2200
+          "price": 2200,
+          "cantidad": 1
         },
         {
           "_id": 7,
@@ -86,7 +91,8 @@ function App() {
           "title": "Vestido Holly con Lunares blancos",
           "description": "Ultima tendencia, no importa quién seas, de dónde seas y qué estés haciendo",
           "availableSizes": ["X", "L", "XL"],
-          "price": 5500 
+          "price": 5500,
+          "cantidad": 1 
         },
         {
           "_id": 8,
@@ -95,7 +101,8 @@ function App() {
           "title": "Cinturon Malaga",
           "description": "Un cinturon de cuero que complementa bien con cualquier outfit",
           "availableSizes": ["XS","X", "L", "XL"],
-          "price": 1500
+          "price": 1500,
+          "cantidad": 1
         },
         {
           "_id": 9,
@@ -104,7 +111,8 @@ function App() {
           "title": "Cinturon Rustic",
           "description": "Un cinturon rustico que complementa bien con cualquier outfit",
           "availableSizes": ["XS","X", "L", "XL"],
-          "price": 1800
+          "price": 1800,
+          "cantidad": 1
         },
         {
           "_id": 10,
@@ -113,7 +121,8 @@ function App() {
           "title": "Vincha Rose",
           "description": "Una vincha que viste y complementa perfecto a cualquier hora",
           "availableSizes": ["XS","X", "L", "XL"],
-          "price": 800
+          "price": 800,
+          "cantidad": 1        
         },
         {
           "_id": 11,
@@ -122,7 +131,8 @@ function App() {
           "title": "Vincha Ruby",
           "description": "Una vincha clasica complementa perfecto",
           "availableSizes": ["XS","X", "L", "XL"],
-          "price": 850
+          "price": 850,
+          "cantidad": 1        
         },
         {
           "_id": 12,
@@ -131,7 +141,8 @@ function App() {
           "title": "Zapatilla Lola",
           "description": "Zapatilla de Cuero, divinas y comodas",
           "availableSizes": ["XS","X", "L", "XL"],
-          "price": 4800
+          "price": 4800,
+          "cantidad": 1
         },
         {
           "_id": 13,
@@ -140,7 +151,8 @@ function App() {
           "title": "Sandalia Malibú",
           "description": "Sandalia de cuero comoda y perfecta para todo el dia",
           "availableSizes": ["XS","X", "L", "XL"],
-          "price": 4600
+          "price": 4600,
+          "cantidad": 1
         },
         {
           "_id": 14,
@@ -149,7 +161,8 @@ function App() {
           "title": "Sandalia Lucy",
           "description": "Sandalia de cuero comoda y perfecta para todo el dia",
           "availableSizes": ["XS","X", "L", "XL"],
-          "price": 5200
+          "price": 5200,
+          "cantidad": 1
         },
         {
           "_id": 15,
@@ -158,7 +171,8 @@ function App() {
           "title": "Zapatilla Snow",
           "description": "Zapatilla de cuero, super combinable y comoda para todo uso",
           "availableSizes": ["XS","X", "L", "XL"],
-          "price": 3800
+          "price": 3800,
+          "cantidad": 1
         },
         {
           "_id": 16,
@@ -167,7 +181,8 @@ function App() {
           "title": "Vestido Florence",
           "description": "Ultima tendencia, no importa quién seas, de dónde seas y qué estés haciendo",
           "availableSizes": ["XS","X", "L", "XL"],
-          "price": 2700
+          "price": 2700,
+          "cantidad": 1
         },
         {
           "_id": 17,
@@ -176,7 +191,8 @@ function App() {
           "title": "Vestido Yasmin",
           "description": "Ultima tendencia, no importa quién seas, de dónde seas y qué estés haciendo",
           "availableSizes": ["XS","X", "L", "XL"],
-          "price": 4000
+          "price": 4000,
+          "cantidad": 1
         },
         {
           "_id": 18,
@@ -185,7 +201,8 @@ function App() {
           "title": "Vestido Sky",
           "description": "Ultima tendencia, no importa quién seas, de dónde seas y qué estés haciendo",
           "availableSizes": ["XS","X", "L", "XL"],
-          "price": 4200
+          "price": 4200,
+          "cantidad": 1
         }
     ],
     
