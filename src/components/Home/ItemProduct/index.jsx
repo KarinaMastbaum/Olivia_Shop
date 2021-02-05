@@ -37,7 +37,7 @@ const Item = () => {
                 {
                     items.length ?
                     <>
-                        <h2 className="destacados">Productos destacados</h2>
+                        <h2 className="destacados">Todos los Productos</h2>
                         <div className="container">
                             <ul className="contenedor">
                               {
@@ -49,7 +49,7 @@ const Item = () => {
                                          imagen={item.data.image}
                                          descripcion={item.data.description}
                                          precio={item.data.price}
-                                          id={item.data.id}
+                                          id={item.id}
                                           />
                                       </li>
                                   ))

@@ -1,48 +1,57 @@
 import {useState, useContext} from 'react';
 import './ProductDetail.css';
 import {Store} from '../../store';
-import {useHistory} from 'react-router-dom';   
+import {useHistory} from 'react-router-dom'; 
+import {getFirestore} from '../../db'; 
+import CountContainer from '../../containers/CountContainer'; 
 
 const ProductDetail = ({item}) => {
     const history = useHistory();
+    const db = getFirestore();
     const [data, setData] = useContext(Store);
-    const [qty, setQty] = useState(1);	
-    
-    const handleClickResta = () => {	
-        if(qty > 1) {	
-            setQty(qty - 1);	
-        }	
-    }	
+    const {cart} = data;
 
-    const onAdd = () => {
-        setData({
-            ...data, 
-            cantidad: data.cantidad + qty,
-            items: [...data.items, item],
-        });
-        history.push('/cart');
-    }    
+    const agregarCarrito= (productoId) => {
+        
+        const filtro = data.items.filter(prod => prod.id=== productoId)[0];
+
+        if(!filtro.data.cantidad) {
+            filtro.data.cantidad = data.contador;
+            console.log(filtro.data.cantidad)
+            setData({...data, cart: [...cart, filtro], contador: 0})
+        } else {
+            // console.log(cart.indexOf(filtro));
+            cart[cart.indexOf(filtro)].data.cantidad+=data.contador;
+            setData({...data, cart: [...cart], contador: 0});
+        }
+
+    }
+
+
+    const handleUpdatePrice = () => {
+        db.collection('productos').doc(item.id).update({
+            price: 3000,
+        })
+        .then(() => console.log('Se actualizó correctamente'))
+        .catch(error => console.log(error));
+    }
+
+    const img = require(`../../images/${item?.data?.image}`);
 
     return (
         <article className="product">
             <div>
-            <h1 className="titulo">{item.titulo}</h1>
-                <img  className="imagen" src={item.imagen} alt="dress"/>
-                    <p className="descripcion">{item.descripcion}</p>
-                    <p className="precio">${item.precio}</p>
-                    
-                    <div className='countContainer'>	
-                    <button className='mr-4 boton'
-                        disabled={qty === 1 ? 'disabled' : null } 	
-                        onClick={handleClickResta}	
-                    >	
-                        -	
-                    </button>	
-                    <input className='cantidad'type="text" value={qty} readOnly/>	
-                    <button className='mr-4 boton' onClick={() => setQty(qty + 1)}>+</button>	
-                </div>
-                <div ClassName="button">
-                <button className="button primary" onClick={onAdd}><h5 className="carrito">Agregar al carrito</h5></button>
+            <h1 className="titulo">{item.data.title}</h1>
+                <img  className="imagen" src={img.default} alt="dress"/>
+                    <p className="descripcion">{item.data.description}</p>
+                    <p className="precio">${item.data.price}</p>
+                    <CountContainer min={0} max={10}/>
+                <div>
+                <button 
+                className= "button primary"
+                onClick={()=> agregarCarrito(item.id)}
+                ><h5 className="carrito">Agregar al carrito</h5></button>
+                <button className="btn" onClick={handleUpdatePrice}>Actualizar precio</button>
                 </div>
             </div>
         </article> 

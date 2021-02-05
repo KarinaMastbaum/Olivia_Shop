@@ -11,7 +11,7 @@ const Category = () => {
 
     useEffect(() => {
         if(category_name) {
-            const category = data.items.filter( prod => prod.category.toLowerCase()  === category_name);
+            const category = data.items.filter( prod => prod.category  === category_name);
             setProds(category);
         }
     }, [category_name, data.items])
