@@ -1,29 +1,33 @@
 import {useContext, Link} from 'react';
 import {Store} from '../../store';
+import './Cart.css';
 
 
 
 const Cart = () => {
     const [data, setData] = useContext(Store);
 
-
-    
     return (
-        <>
-        {
-                data.cart.map(item => (
-                    <li key={item.id}>
-                        <div>
-                            <h2>{item.data.title}</h2>
-                            <img src={item.data.image} alt="imagen"></img>
-                            <p>Cantidad: {item.data.cantidad}</p>
-                            <p>Precio por unidad: <strong>${item.data.price}</strong></p>
-                            <p>Precio total: <strong>${item.data.price * item.data.cantidad}</strong></p>
-                        </div>
-                    </li>
-                ))
-            }
-            </>
+        
+        <section className="cart">
+        <h1 className="tituloCart">Carrito de Compras</h1>
+    
+            <ul>
+                {
+                    data.cart.map(item => (
+                        <li key={item.id}>
+                            <div>
+                                <h2>{item.data.title}</h2>
+                                <img className="imagen" src={item.data.image} alt="imagen"></img>
+                                <p>Cantidad: {item.data.cantidad}</p>
+                                <p>Precio por unidad: <strong>${item.data.price}</strong></p>
+                                <p>Precio total: <strong>${item.data.price * item.data.cantidad}</strong></p>
+                            </div>
+                        </li>
+                    ))
+                }
+            </ul>
+        </section>
     )
 
 }

@@ -20,7 +20,7 @@ const ProductDetail = ({item}) => {
             console.log(filtro.data.cantidad)
             setData({...data, cart: [...cart, filtro], contador: 0})
         } else {
-            // console.log(cart.indexOf(filtro));
+   
             cart[cart.indexOf(filtro)].data.cantidad+=data.contador;
             setData({...data, cart: [...cart], contador: 0});
         }
