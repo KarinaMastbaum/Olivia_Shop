@@ -54,6 +54,12 @@
       color: white;
   }
 
+  a.detalle:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
   .cantidad {
     color: orange;
     font-size: 1.2rem;

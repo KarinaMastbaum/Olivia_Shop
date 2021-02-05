@@ -5,7 +5,6 @@ import {Store} from '../../../store/index';
 import CountContainer from '../../../containers/CountContainer';
 
 
-// const carrito = [];
 
 const ProductCard = ({id, titulo, imagen, descripcion, precio, type='grid'}) => {
 

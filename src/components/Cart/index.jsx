@@ -6,6 +6,8 @@ import {Store} from '../../store';
 const Cart = () => {
     const [data, setData] = useContext(Store);
 
+
+    
     return (
         <>
         {
