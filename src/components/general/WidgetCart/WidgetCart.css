@@ -1,19 +1,61 @@
 .widgetCart {
-  height: 100vh;
-  width: 30%;
-  position: fixed;
-  right: -30%;
-  top: 0;
-  background: var(--blanco);
-  z-index: 2;
-  box-shadow: -0.3rem 0 0.3rem rgba(0, 0, 0, 0.2);
-  transition: right 0.5s;
-}
+    height: 100vh;
+    width: 30%;
+    position: fixed;
+    right: -30%;
+    top: 0;
+    background: rgb(236,231,225);
+    background: linear-gradient(90deg, rgba(236,231,225,0.95) 0%, rgba(242,189,125,0.95) 48%, rgba(255,127,80,0.95) 100%);
+    z-index: 2;
+    box-shadow: -0.3rem 0 0.3rem rgba(0, 0, 0, 0.2);
+    transition: right 0.5s;
+  }
+  
+  .close {
+    right: -30%;
+  }
+  
+  .open {
+    right: 0;
+  }
 
-.close {
-  right: -30%;
-}
+  .imagen {
+      position: relative;
+      margin-left: 5rem;
+  }
 
-.open {
-  right: 0;
-}
+  h3.titulo {
+      text-align: left;
+      margin-top: 8rem;
+      color:white;
+      font-size: 1.8rem;
+  }
+
+  p.precio {
+      text-align: center;
+      font-size: 1.5rem;
+      color: white;
+  }
+  
+  .container {
+      display:list-item;
+      text-align: center;
+  }
+
+
+  .boton {
+      color:white;
+      font-size: 1.2rem;
+      margin: 2rem;
+  }
+
+  a.detalle {
+      text-decoration: none;
+      color: white;
+  }
+
+  .cantidad {
+    color: orange;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }

@@ -13,6 +13,7 @@ const Cart = () => {
                     <li key={item.id}>
                         <div>
                             <h2>{item.data.title}</h2>
+                            <img src={item.data.image} alt="imagen"></img>
                             <p>Cantidad: {item.data.cantidad}</p>
                             <p>Precio por unidad: <strong>${item.data.price}</strong></p>
                             <p>Precio total: <strong>${item.data.price * item.data.cantidad}</strong></p>

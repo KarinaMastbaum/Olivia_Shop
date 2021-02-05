@@ -34,7 +34,6 @@ const ProductCard = ({id, titulo, imagen, descripcion, precio, type='grid'}) => 
     return(
             <div className={`productCard ${type}`}>
             <div>
-                <h3>{id}</h3>
                 <h3>{titulo}</h3>
                 <img src={img.default} alt='Producto' />
                 <p>{descripcion}</p>

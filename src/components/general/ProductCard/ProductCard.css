@@ -47,14 +47,12 @@
 
 
 .productCard {
-  width: 50%;
   display: flex;
   align-items: center;
   background: var(--blanco);
   border-radius: 1.5rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.5s;
-  height: 10%;
   position: relative;
 }
 
@@ -63,7 +61,7 @@
 }
 
 .productCard img {
-  width: 50%;
+  max-width: 50%;
   border-top-left-radius: 1.5rem;
   border-top-right-radius: 1.5rem;
 }

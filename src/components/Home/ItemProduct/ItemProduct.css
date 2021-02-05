@@ -12,7 +12,7 @@
   
   .products ul li {
     list-style-type: none;
-    width: 70%;
+    max-width: 250px;
   }
     
   h2.destacados {
@@ -31,8 +31,13 @@
   font-weight: bold;
   }
     
-  div.container {
+  /* div.container {
     display: flex;
     text-align: center;
     justify-content: space-between
+  } */
+
+  .contenedor {
+    display: flex;
+    width: 100%;
   }
