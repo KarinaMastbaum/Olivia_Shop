@@ -1,31 +1,40 @@
-import {useContext, Link} from 'react';
+import {useContext} from 'react';
 import {Store} from '../../store';
 import './Cart.css';
+import {Link} from 'react-router-dom';
 
 
 
 const Cart = () => {
     const [data, setData] = useContext(Store);
 
+
+
     return (
         
         <section className="cart">
         <h1 className="tituloCart">Carrito de Compras</h1>
-    
             <ul>
                 {
-                    data.cart.map(item => (
+                    data.cart.map(item => {
+                        const img = require(`../../images/${item.data.image}`)
+                        return (
                         <li key={item.id}>
                             <div>
                                 <h2>{item.data.title}</h2>
-                                <img className="imagen" src={item.data.image} alt="imagen"></img>
+                                <img className="imagen" src={img.default} alt="imagen"></img>
                                 <p>Cantidad: {item.data.cantidad}</p>
                                 <p>Precio por unidad: <strong>${item.data.price}</strong></p>
                                 <p>Precio total: <strong>${item.data.price * item.data.cantidad}</strong></p>
                             </div>
                         </li>
-                    ))
+                        )
+                    })
                 }
+                <button className="boton">
+                     <Link className= "checkout" to="/checkout">Finalizar compra</Link>
+                </button>
+                    
             </ul>
         </section>
     )

@@ -8,7 +8,7 @@ import Category from './components/Category';
 import Detail from './components/Detail';
 import Error404 from './components/general/Error404';
 import Cart from './components/Cart/index';
-import Checkout from './components/Checkout';
+import Checkout from './components/Checkout/Checkout';
 import Footer from './components/general/Footer';
 import {Store} from './store';
 import {getFirestore} from './db/index';
@@ -62,14 +62,14 @@ function App() {
           <Route path="/cart">
             <Cart />
           </Route>
+          <Route exact path="/checkout">
+            <Checkout />
+          </Route>
           <Route exact path="/:category_name">
             <Category />
           </Route>
           <Route exact path="/:category_name/:id">
             <Detail />
-          </Route>
-          <Route path="/checkout">
-            <Checkout />
           </Route>
           <Route path="*">
             <Error404 />

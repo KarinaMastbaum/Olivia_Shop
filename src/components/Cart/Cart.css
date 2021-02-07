@@ -62,3 +62,23 @@
   li {
     padding: 2rem 1rem;
   }
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  a:hover {
+    color: rgb(160, 80, 4);
+  }
+
+  .boton {
+    color: white;
+    margin-right: 1.2rem;
+    margin-top: 1rem;
+    border: 0.1rem rgb(202, 87, 20) solid; 
+    background-color:  rgb(231, 165, 126);
+  }

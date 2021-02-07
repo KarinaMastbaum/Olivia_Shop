@@ -9,13 +9,13 @@ const ProductsList = ({products}) => {
 
     return (
         <section className="products">
-            <div>
+            {/* <div>
                 {
                     types ? 
                     <BsListUl onClick={() => setTypes(!types)} title="Ver como lista" /> :
                     <BsFillGridFill onClick={() => setTypes(!types)} title="Ver como grilla" />
                 }
-            </div>
+            </div> */}
 
             <ul className={`products_list ${types ? 'grid' : 'list'}`}>
                 {
