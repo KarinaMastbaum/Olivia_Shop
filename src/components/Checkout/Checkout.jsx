@@ -5,7 +5,6 @@ import {getFirestore} from '../../db';
 import firebase from 'firebase/app';
 
 
-
 const Checkout = () => {
     const db = getFirestore();
     const [data, setData] = useContext(Store);
@@ -15,6 +14,10 @@ const Checkout = () => {
         apellido: '',
         email: '',
         tel: '',
+        numeroTarjeta: '',
+        fechaVencimiento: '',
+        nombreTitular: '',
+        codigoSeguridad: '',
     })
     const [idCompra, setIdCompra] = useState('');
 
@@ -50,7 +53,7 @@ const Checkout = () => {
 
         <section className="checkout">
             <div className="container">
-                <h2>Checkout</h2>
+                <h2 className="finalizarCompra">Finalizar Compra</h2>
 
                 {
                     !venta ?
@@ -60,12 +63,17 @@ const Checkout = () => {
                         <input type="text" value={formData.apellido} onChange={handleChangeInput} name="apellido" placeholder="Apellido" />
                         <input type="email" value={formData.email} onChange={handleChangeInput} name="email" placeholder="E-mail" />
                         <input type="tel" value={formData.tel} onChange={handleChangeInput} name="tel" placeholder="Teléfono" />
-                        <p>{sumTotal(data.cart)}</p>
-                        <button>Pagar</button>
-                    </form> :
-                    <p>La compra se realizó correctamente, tu número de seguimiento es: {idCompra}</p>
+                        <input type="number" value={formData.numeroTarjeta} onChange={handleChangeInput} name="numeroTarjeta" placeholder="Numero de Tarjeta" />
+                        <input type="number" value={formData.fechaVencimiento} onChange={handleChangeInput} name="fechaVencimiento" placeholder="Fecha de vencimiento" />
+                        <input type="text" value={formData.nombreTitular} onChange={handleChangeInput} name="nombreTitular" placeholder="Nombre del titular" />
+                        <input type="number" value={formData.codigoSeguridad} onChange={handleChangeInput} name="codigoSeguridad" placeholder="Codigo de seguridad" />
+                        <p className="totalPagar"> Total a pagar: ${sumTotal(data.cart)}</p>
+                        <button className="pagar">Pagar</button>
+                    </form>:
+                
+                    <p className="compraRealizada">La compra se realizó correctamente, tu número de seguimiento es: {idCompra}</p>
                 }
-            </div>
+                </div>
         </section>
     )
 }

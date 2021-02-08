@@ -4,14 +4,17 @@
 }
 
 .newsletter h2 {
+  margin-right: 2rem;
   text-align: center;
-  color: var(--blanco);
+  color: orange;
   font-size: 2.5rem;
 }
 
 .newsletter p {
+  font-weight: bold;
   text-align: center;
-  color: var(--blanco);
+  margin-right: 2rem;
+  color: orange;
   font-size: 1.4rem;
 }
 
@@ -33,13 +36,18 @@
 
 .newsletter form input[type="submit"] {
   width: 30%;
-  background: var(--color-principal);
+  background: orange;
   color: var(--blanco);
+  font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
   transition: background 0.5s;
 }
 
 .newsletter form input[type="submit"]:hover {
-  background: #0758af;
+  background:orange;
+}
+
+section.newsletter {
+  background-color:#ECE7E1;
 }

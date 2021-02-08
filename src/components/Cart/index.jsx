@@ -19,7 +19,7 @@ const Cart = () => {
                     data.cart.map(item => {
                         const img = require(`../../images/${item.data.image}`)
                         return (
-                        <li key={item.id}>
+                        <li className="containerCart" key={item.id}>
                             <div>
                                 <h2>{item.data.title}</h2>
                                 <img className="imagen" src={img.default} alt="imagen"></img>
@@ -31,7 +31,7 @@ const Cart = () => {
                         )
                     })
                 }
-                <button className="boton">
+                <button className="botonCheckout">
                      <Link className= "checkout" to="/checkout">Finalizar compra</Link>
                 </button>
                     

@@ -1,5 +1,4 @@
 import Slider from './Slider'
-import CategoriesGrid from './CategoriesGrid'
 import Newsletter from './Newsletter'
 import ItemListContainer from './ItemProduct'
 
@@ -8,7 +7,6 @@ const Home = () => {
         <>
             <Slider />
             <ItemListContainer />
-            <CategoriesGrid />
             <Newsletter />
         </>
     )

@@ -5,7 +5,7 @@
   .checkout h2 {
     text-align: center;
     font-size: 3rem;
-    color: var(--color-secundario);
+    color: orange;
   }
   
   .checkout form {
@@ -15,9 +15,29 @@
     width: 50%;
   }
   
-  .checkout form input,
-  .checkout form button {
+  .checkout form input{
     padding: 1rem;
     margin-bottom: 1rem;
   }
+
+  button.pagar {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+    border: 0.1rem rgb(202, 87, 20) solid; 
+    background-color:  rgb(231, 165, 126);
+  }
+
+
+  p.compraRealizada {
+    color: rgb(202, 87, 20);
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
   
+
+  .totalPagar {
+    color: rgb(202, 87, 20);
+    font-weight: bold;
+    font-size: 1.5rem;
+  }

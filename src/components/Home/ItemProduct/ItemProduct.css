@@ -1,7 +1,7 @@
-.products {
-    padding: 4rem 0;
-    
-  }
+/* .products {
+    text-align: center;
+    width: 80%;
+  } */
   
   .products h2 {
     color: var(--color-secundario);
@@ -40,4 +40,5 @@
     /* width: 100%; */
     flex-wrap: wrap;
     box-sizing: border-box;
+    justify-content: space-evenly;
   }

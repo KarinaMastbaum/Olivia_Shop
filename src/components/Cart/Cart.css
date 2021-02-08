@@ -55,6 +55,10 @@
     color: var(--blanco);
   }
 
+  .containerCart {
+    width: 80%;
+  }
+
   .tituloCart {
       color: rgb(255, 123, 0);
   }
@@ -75,10 +79,18 @@
     color: rgb(160, 80, 4);
   }
 
-  .boton {
+  .botonCheckout {
     color: white;
-    margin-right: 1.2rem;
+    margin-left: 5rem;
     margin-top: 1rem;
+    padding: 0.5rem;
     border: 0.1rem rgb(202, 87, 20) solid; 
     background-color:  rgb(231, 165, 126);
   }
+
+  a.checkout {
+    text-decoration: none;
+    font-size: 1.7rem;
+  }
+
+

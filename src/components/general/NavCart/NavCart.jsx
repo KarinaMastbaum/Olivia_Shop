@@ -13,10 +13,12 @@ console.log(total);
     }
 
     return (
-        <div className="navCart" onClick={action}>
-            <AiOutlineShoppingCart />
-            <span>{sumItems()}</span>
-        </div>
+            <div className="navCart" onClick={action}>
+                <span className="spanContador">{sumItems()}</span>
+                <AiOutlineShoppingCart />
+            </div>
+    
+
     )
 }
 

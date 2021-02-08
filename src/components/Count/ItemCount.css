@@ -4,10 +4,10 @@
     align-items: center;
 }
 
-.countContainer {
+/* .countContainer {
     margin-left: 1.4em;
     align-items: center;
-}
+} */
 
 .button {
   width: 100%;
@@ -17,6 +17,8 @@
     color: white;
     background-color: rgb(223, 167, 83);
     border-color: rgb(196, 120, 8);
+    height: 3rem;
+    width: 4rem;
 }
 
 .boton:hover {

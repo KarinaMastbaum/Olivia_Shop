@@ -19,21 +19,24 @@ const WidgetCart = ({show, action}) => {
                     const img = require(`../../../images/${item.data.image}`)
                     return(
                         <>
-                            <p className="container" key={item.id + item.data.title}>
+                            <div className="containerWidget" key={item.id + item.data.title}>
                             <h3 className="titulo">{item.data.title}</h3>
                             <img className="imagen" src={img.default} alt="imagen"></img>   
                             <p className="precios">${item.data.price}</p>
                             <p className="cantidad">Cantidad: {item.data.cantidad}</p>
-                            </p>
-                            <button onClick= {() => eliminarCarrito(item.id)}>
-                                <p>x</p>
+                            
+                            <button className="botonEliminarCarrito" onClick= {() => eliminarCarrito(item.id)}>
+                                x
                             </button>
+                            </div>
                         </>)})
             }
-            <button className="boton">
-            <Link className="detalle" to={`/cart`}>Cart</Link>
+            <div>
+            <button className="botonCarrito">
+            <Link className="detalle" to={`/cart`}>Carrito</Link>
             </button>
-            <button className="boton" onClick={action}>Cerrar</button>
+            <button className="botonCerrar" onClick={action}>Cerrar</button>
+            </div>
         </div>
     )
 }

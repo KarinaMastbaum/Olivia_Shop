@@ -2,7 +2,6 @@
 .product {
     display: grid;
     grid-template-columns: 100% 1fr;
-    grid-gap: 6rem;
   }
 
 .titulo {
@@ -36,10 +35,11 @@ p.precio {
     margin-top: 2rem;
 }
 
-div.container {
+.containerDetail {
     display: flex;
+    justify-content: center;
     text-align: center; 
-    width: 60%
+    width: 100%
 }
 
 .botonProductItem {   
@@ -113,10 +113,6 @@ div.container {
     font-size: 1.5rem;
   } 
 
-  .cantidad {
-      display: flex;
-  }
-
   input.cantidad {
   width: 20%;
   text-align: center;
@@ -127,7 +123,6 @@ div.container {
   outline: none;
   }
   
-  .mr-4.boton {
-      width: 5%;
-      
-  }
+.divDetail {
+  
+}

@@ -17,9 +17,9 @@ const Category = () => {
     }, [category_name, data.items])
 
     return (
-        <section className="category">
+        <>
             <ProductsList className="productList" products={prods} />
-        </section>
+        </>
     )
 }
 

@@ -20,9 +20,8 @@
     right: 0;
   }
 
-  .imagen {
+  img.imagen {
       position: relative;
-      margin-left: 5rem;
   }
 
   h3.titulo {
@@ -34,22 +33,36 @@
 
   p.precios {
       font-weight: bold;
-      text-align: center;
+      text-align: right;
       font-size: 1.5rem;
       color: white;
   }
   
-  .container {
-      display:list-item;
-      text-align: center;
+  .containerWidget {
+      display: inline-block;
+      padding: 2rem;
   }
 
 
-  .boton {
-      color:white;
-      font-weight: bold;
-      font-size: 1.2rem;
-      margin: 2.2rem;
+  .botonCerrar {
+    background-color: #E7A57E;
+    border: 0.1rem rgb(202, 87, 20) solid;
+    color:white;
+    padding: 0.5rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin: 2.2rem;
+  }
+
+  .botonCarrito {
+    
+    background-color: #E7A57E;
+    border: 0.1rem rgb(202, 87, 20) solid; 
+    color:white;
+    padding: 0.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 2.2rem;
   }
 
   a.detalle {
@@ -67,4 +80,18 @@
     color: white;
     font-size: 1.2rem;
     font-weight: bold;
+    text-align: right;
+  }
+
+  button.botonEliminarCarrito {
+    color: white;
+    float: right;
+    padding: 0.5rem;
+    border: 0.1rem rgb(202, 87, 20) solid; 
+    background-color:  rgb(231, 165, 126);
+  }
+
+
+  .botonEliminarCarrito:hover {
+    color: white;
   }

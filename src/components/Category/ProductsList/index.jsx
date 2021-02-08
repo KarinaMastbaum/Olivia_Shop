@@ -9,17 +9,17 @@ const ProductsList = ({products}) => {
 
     return (
         <section className="products">
-            {/* <div>
+            <div>
                 {
                     types ? 
                     <BsListUl onClick={() => setTypes(!types)} title="Ver como lista" /> :
                     <BsFillGridFill onClick={() => setTypes(!types)} title="Ver como grilla" />
                 }
-            </div> */}
+            </div>
 
             <ul className={`products_list ${types ? 'grid' : 'list'}`}>
                 {
-                    products.map(item => <li key={item.id + item.title}><ProductCard id={item.id} titulo={item.data.title} imagen={item.data.image} precio={item.data.price} categoria={item.data.category} type={`${types ? 'grid' : 'list'}`} /></li>)
+                    products.map(item => <li className="productCardList" key={item.id + item.title}><ProductCard id={item.id} titulo={item.data.title} imagen={item.data.image} precio={item.data.price} categoria={item.data.category} type={`${types ? 'grid' : 'list'}`} /></li>)
                 }
             </ul>
         </section>
